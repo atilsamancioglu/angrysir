@@ -57,6 +57,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         bird.physicsBody!.categoryBitMask = ColliderType.Bird.rawValue
         bird.physicsBody!.collisionBitMask = ColliderType.Bird.rawValue
         
+        /*
+        let boxTextre = SKTexture(imageNamed: "brick")
+        var boxExample = SKSpriteNode()
+        boxExample = SKSpriteNode(texture: boxTextre)
+        boxExample.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
+        self.addChild(boxExample)
+ */
+        
+        
         let boxTexture = SKTexture(imageNamed: "brick")
         
         let size = CGSize(width: boxTexture.size().width / 5, height: boxTexture.size().width / 5)
